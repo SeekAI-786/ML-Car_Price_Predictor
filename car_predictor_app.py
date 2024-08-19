@@ -11,11 +11,11 @@ date_time = datetime.datetime.now()
 
 # Load the pre-trained model
 model = xgb.XGBRegressor()
-model.load_model('C:/Users/HP/xgb_model.json')  # Ensure the path is correct
+model.load_model('xgb_model.json')  # Ensure the path is correct
 
 def main():
 
-    img = Image.open("C:/Users/HP/car_bg.jpg")
+    img = Image.open("car_bg.jpg")
     st.image(img, use_column_width=True)
     
     # Transparent overlay for content
